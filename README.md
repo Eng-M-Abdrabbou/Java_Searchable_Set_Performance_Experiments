@@ -28,6 +28,10 @@ We measured the time taken for:
 
 ## 🔬 Key Findings
 
+![Performance Comparison Screenshot](/images/scrn.png)
+
+or textually:
+
 | Operation | ArrayBag | Sorted ArrayList | HashSet |
 |-----------|----------|-----------------|---------|
 | Adding All IDs | 1.4 ms | 28.4 ms | 5.1 ms |
