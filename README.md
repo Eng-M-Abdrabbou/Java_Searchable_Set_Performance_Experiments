@@ -45,25 +45,26 @@ or textually:
 
 ## Project Structure
 
-Java_Searchable_Set_Performance_Experiments/
-├── build/                  # Build output directory
-├── nbproject/              # NetBeans project configuration
-├── src/                    # Source code
-│   └── searchablesetproject/
-│       ├── SearchableSetInterface.java
-│       ├── ArrayBag.java
-│       ├── BagInterface.java
-│       ├── BagSearchableSet.java
-│       ├── HashSetSearchableSet.java
-│       ├── ListSearchableSet.java
-│       └── SearchableSetProject.java
-├── test/                   # Test source files
-├── build.xml               # Ant build script
-├── manifest.mf             # Manifest file
-├── README.md               # Project documentation
-├── unique_ids.txt          # Performance test data set
-├── contained_ids.txt       # Performance test data set
-└── non_contained_ids.txt   # Performance test data set
+* **`build/`**: Contains the compiled `.class` files generated after building the project.
+* * **`Images/`**: Contains the compiled `.png` files generated after building and running the project to show the results of the experiment.
+* **`nbproject/`**: Holds configuration files specific to the NetBeans Integrated Development Environment (IDE). This directory is usually not crucial for command-line builds or other IDEs.
+* **`src/`**: Contains the source code for the Java project.
+    * **`searchablesetproject/`**: The main package organizing the project's classes.
+        * **`SearchableSetInterface.java`**: Defines the interface that all searchable set implementations must adhere to. It likely includes methods for adding, removing, and searching for elements.
+        * **`ArrayBag.java`**: An implementation of the `BagInterface` using an array as the underlying data structure.
+        * **`BagInterface.java`**: Defines the interface for a basic Bag data structure, which allows for duplicate elements.
+        * **`BagSearchableSet.java`**: An implementation of the `SearchableSetInterface` that utilizes a `Bag` (likely `ArrayBag`) to store its elements.
+        * **`HashSetSearchableSet.java`**: An implementation of the `SearchableSetInterface` that leverages the `java.util.HashSet` for efficient storage and searching.
+        * **`ListSearchableSet.java`**: An implementation of the `SearchableSetInterface` that uses a `java.util.ArrayList` to store its elements.
+        * **`SearchableSetProject.java`**: The main class containing the `main` method to execute the performance experiments and likely print the results.
+* **`test/`**: This directory would typically contain JUnit test files to verify the correctness of the different `SearchableSetInterface` implementations. (Note: This directory is present but might be empty if tests haven't been written yet).
+* **`build.xml`**: An Ant build script used to automate the compilation, execution, and packaging of the Java project.
+* **`manifest.mf`**: A manifest file that contains metadata about the project, especially when creating a JAR (Java Archive) file.
+* **`README.md`**: This file, providing an overview and documentation for the project.
+* **`unique_ids.txt`**: A text file containing a set of unique identifiers used as data for performance tests, particularly for operations like adding elements.
+* **`contained_ids.txt`**: A text file containing a subset of identifiers that are expected to be present in the searchable sets during search performance tests.
+* **`non_contained_ids.txt`**: A text file containing a set of identifiers that are expected to be absent from the searchable sets during search performance tests.
+
 
 ## 🏃 How to Run
 
