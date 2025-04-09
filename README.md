@@ -28,7 +28,7 @@ We measured the time taken for:
 
 ## 🔬 Key Findings
 
-![Performance Comparison Screenshot](/images/scrn.png)
+![Performance Comparison Screenshot](/Images/scrn.png)
 
 or textually:
 
