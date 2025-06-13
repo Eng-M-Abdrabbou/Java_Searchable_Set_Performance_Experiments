@@ -70,6 +70,7 @@ or textually:
 
 ### Prerequisites
 - Java Development Kit (JDK) 8 or higher
+- Netbeans IDE 8.2
 
 ### Steps
 1. Clone the repository
